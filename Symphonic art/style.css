@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap');
+
+* {margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Open Sans',sans-serif;background:#faf8f5;color:#333}
+
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 40px;background:rgba(255,255,255,0.9);
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+header h1{font-family:'Playfair Display',serif;font-size:28px}
+nav a{text-decoration:none;color:#444;margin-left:20px;font-weight:600;transition:.3s}
+nav a:hover, nav a.active{color:#c85b7a}
+
+.hero{
+  height:70vh;background:url('https://images.unsplash.com/photo-1504198266285-165a16b00017?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  display:flex;align-items:center;justify-content:center;
+}
+.overlay{background:rgba(0,0,0,0.5);color:#fff;padding:40px;border-radius:10px;text-align:center}
+.overlay h2{font-family:'Playfair Display',serif;font-size:36px;margin-bottom:10px}
+
+.gallery{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:16px;padding:50px;
+}
+.gallery-item img{
+  width:100%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  transition:transform .35s,box-shadow .35s;
+}
+.gallery-item img:hover{transform:scale(1.05);box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+
+.content{padding:60px;max-width:900px;margin:auto;text-align:center}
+.page-title{text-align:center;margin-top:40px;font-family:'Playfair Display',serif;font-size:32px}
+
+footer{text-align:center;padding:18px;background:#222;color:#fff;margin-top:20px}
